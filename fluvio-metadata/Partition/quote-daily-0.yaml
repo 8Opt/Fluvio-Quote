@@ -1,0 +1,29 @@
+!1.0.0
+meta:
+  id: quote-daily-0
+  revision: 2
+  parent:
+    id: quote-daily
+    revision: 2
+key: quote-daily-0
+status:
+  resolution: Online
+  leader:
+    spu: 5001
+    hw: 1
+    leo: 1
+  lsr: 0
+  replicas: []
+  size: 181
+  isBeingDeleted: false
+  baseOffset: 0
+spec:
+  leader: 5001
+  replicas:
+  - 5001
+  cleanupPolicy: null
+  storage: null
+  compressionType: Any
+  deduplication: null
+  system: false
+  mirror: null

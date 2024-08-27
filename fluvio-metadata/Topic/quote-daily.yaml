@@ -1,0 +1,26 @@
+!1.0.0
+meta:
+  id: quote-daily
+  revision: 2
+  children:
+    Partition:
+    - id: quote-daily-0
+      revision: 0
+      parent:
+        id: quote-daily
+        revision: 2
+key: quote-daily
+status:
+  resolution: Provisioned
+  replicaMap:
+    0:
+    - 5001
+  mirrorMap: {}
+  reason: ''
+spec:
+  replicas: !computed
+    partitions: 1
+    replicationFactor: 1
+    ignoreRackAssignment: false
+  compressionType: Any
+  system: false
